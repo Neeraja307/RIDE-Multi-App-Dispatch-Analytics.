@@ -1,24 +1,30 @@
-This is free and unencumbered software released into the public domain.
+# 🚗 RIDE Aggregator: Multi-App Dispatch & SLA Bottleneck Analytics
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+## 📌 Executive Overview
+This portfolio case study analyzes **10,000 simulated ride-hailing requests** across four major platforms (**Uber, Ola, Rapido, and Namma Yatri**). The project evaluates cross-platform fulfillment latency, driver cancellation behaviors, and operational SLA risk tiers to optimize dispatch dispatching algorithms and reduce penalty fees.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+## 🔑 Key Operational Findings & Metrics
+- **Total Requests Processed:** 10,000 ride logs across 4 platforms.
+- **Average Total Time-To-Fulfill (TTF):** ~60.9 seconds.
+- **Driver Cancellation Rate:** 14.85% (1,485 driver drop-offs).
+- **SLA Risk Bottleneck:** 4,731 requests (~47.3%) fall into the **Slow (>60s)** efficiency tier.
+- **Penalty Incidents:** 597 auto-cancel SLA delayed fee instances.
 
-For more information, please refer to <https://unlicense.org>
+---
+
+## 🛠️ Data Pipeline & Tech Stack
+1. **Python (Jupyter Notebook):** Data generation and validation script using `pandas` and probabilistic distribution logic to model real-world dispatch latency and cancellations.
+2. **Microsoft Excel:** Feature engineering (`Efficiency_Tier`, penalty indicator logic), pivot tables, and KPI aggregations.
+3. **Tableau BI:** Executive interactive dashboard featuring match-time vs. fulfillment speed, cancellation impact, and SLA risk distribution.
+4. **PowerPoint:** End-to-end executive case study aligned with the Google Data Analytics 6-Phase Framework.
+
+---
+
+
+---
+
+## 🔒 Copyright & Intellectual Property Notice
+*© 2026 C Neeraja. All rights reserved.*  
+*This repository, including dataset schemas, simulation logic, and analytical frameworks, is created solely for personal portfolio display. No part of this project may be reproduced, distributed, or repurposed for commercial or academic use without express written consent.*
